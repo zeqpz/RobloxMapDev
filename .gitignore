@@ -1,0 +1,15 @@
+# python / tooling
+.venv/
+__pycache__/
+*.pyc
+# capture browser profiles + logs (large, machine-specific)
+research/city-reference/data/earth_profile*/
+research/city-reference/data/_probe_*/
+research/city-reference/data/log_*.txt
+# blender autosaves
+*.blend1
+*.blend@
+# local secrets
+*.key
+gamdevkey.txt
+.env

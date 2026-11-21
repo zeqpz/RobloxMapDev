@@ -1,0 +1,554 @@
+{
+ "abq_intl_trumbull": {
+  "lat": 35.0690755,
+  "lng": -106.5549255,
+  "name": "Utah St SE & Trumbull Ave SE, Albuquerque, NM 87108",
+  "ok": true
+ },
+ "abq_intl_kathryn": {
+  "lat": 35.0655583,
+  "lng": -106.5819441,
+  "name": "Kathryn Ave SE & Alvarado Dr SE, Albuquerque, NM 87108",
+  "ok": true
+ },
+ "abq_intl_southern_apts": {
+  "lat": 35.0671213,
+  "lng": -106.5594237,
+  "name": "Southern Ave SE & Pennsylvania St SE, Albuquerque, NM 87108",
+  "ok": true
+ },
+ "abq_barelas": {
+  "lat": 35.0748041,
+  "lng": -106.6573351,
+  "name": "8th St SW & Pacific Ave SW, Albuquerque, NM 87102",
+  "ok": true
+ },
+ "abq_martineztown": {
+  "lat": 35.0941961,
+  "lng": -106.6396886,
+  "name": "Mountain Rd NE & Edith Blvd NE, Albuquerque, NM 87102",
+  "ok": true
+ },
+ "abq_south_valley": {
+  "lat": 35.0535619,
+  "lng": -106.677729,
+  "name": "Arenal Rd SW & Goff Blvd SW, South Valley, NM 87105",
+  "ok": true
+ },
+ "abq_ne_heights": {
+  "lat": 35.0947666,
+  "lng": -106.5246565,
+  "name": "Constitution Ave NE & Morris St NE, Albuquerque, NM 87112",
+  "ok": true
+ },
+ "abq_westside_tract": {
+  "lat": 35.0843974,
+  "lng": -106.7112975,
+  "name": "Bluewater Village",
+  "ok": true
+ },
+ "abq_wells_park": {
+  "lat": 35.0953902,
+  "lng": -106.6520709,
+  "name": "6th St NW & Mountain Rd NW, Albuquerque, NM 87102",
+  "ok": true
+ },
+ "abq_central_sanmateo": {
+  "lat": 35.0777015,
+  "lng": -106.5861096,
+  "name": "Central Ave SE & San Mateo Blvd SE, Albuquerque, NM 87108",
+  "ok": true
+ },
+ "abq_central_louisiana": {
+  "lat": 35.0758074,
+  "lng": -106.5685606,
+  "name": "Central Ave SE & Louisiana Blvd SE, Albuquerque, NM 87108",
+  "ok": true
+ },
+ "abq_central_wyoming": {
+  "lat": 35.0739708,
+  "lng": -106.5503462,
+  "name": "Central Ave SE & Wyoming Blvd SE, Albuquerque, NM 87123",
+  "ok": true
+ },
+ "abq_nob_hill": {
+  "lat": 35.079887,
+  "lng": -106.6057973,
+  "name": "Central Ave SE & Amherst Dr SE, Albuquerque, NM 87106",
+  "ok": true
+ },
+ "abq_downtown_central": {
+  "lat": 35.0845396,
+  "lng": -106.6516176,
+  "name": "4th St NW & Central Ave NW, Albuquerque, NM 87102",
+  "ok": true
+ },
+ "abq_old_town": {
+  "lat": 35.096779,
+  "lng": -106.6700849,
+  "name": "San Felipe de Neri Church",
+  "ok": true
+ },
+ "abq_4th_menaul": {
+  "lat": 35.1109756,
+  "lng": -106.6465387,
+  "name": "Menaul Blvd NW & 4th St NW, Albuquerque, NM 87107",
+  "ok": true
+ },
+ "abq_isleta_arenal": {
+  "lat": 35.0535619,
+  "lng": -106.677729,
+  "name": "Isleta Blvd SW & Arenal Rd SW, South Valley, NM 87105",
+  "ok": true
+ },
+ "abq_luna_lodge": {
+  "lat": 35.0744555,
+  "lng": -106.5457084,
+  "name": "Luna Lodge motel",
+  "ok": true
+ },
+ "abq_el_vado": {
+  "lat": 35.0942192,
+  "lng": -106.6771927,
+  "name": "El Vado Motel",
+  "ok": true
+ },
+ "abq_hoffmantown": {
+  "lat": 35.1068771,
+  "lng": -106.5733118,
+  "name": "Coronado Center",
+  "ok": true
+ },
+ "abq_talin": {
+  "lat": 35.0752639,
+  "lng": -106.5680389,
+  "name": "Talin Market World Food Fare",
+  "ok": true
+ },
+ "abq_lotaburger": {
+  "lat": 35.0302852,
+  "lng": -106.6801392,
+  "name": "Blake's Lotaburger",
+  "ok": true
+ },
+ "abq_pawn": {
+  "lat": 35.091606,
+  "lng": -106.6518118,
+  "name": "Albuquerque Pawn Shop",
+  "ok": true
+ },
+ "abq_rail_yards": {
+  "lat": 35.075633,
+  "lng": -106.6489752,
+  "name": "Albuquerque Rail Yards",
+  "ok": true
+ },
+ "abq_gas_allsups": {
+  "lat": 35.0538898,
+  "lng": -106.677339,
+  "name": "Allsup's Convenience Store",
+  "ok": true
+ },
+ "abq_gas_circlek": {
+  "lat": 35.0688333,
+  "lng": -106.5092647,
+  "name": "Circle K",
+  "ok": true
+ },
+ "abq_gas_giant": {
+  "lat": 35.0826214,
+  "lng": -106.7112554,
+  "name": "Giant",
+  "ok": true
+ },
+ "abq_gas_maverik": {
+  "lat": 35.131429,
+  "lng": -106.6046761,
+  "name": "Maverik",
+  "ok": true
+ },
+ "abq_walmart": {
+  "lat": 35.0762369,
+  "lng": -106.587876,
+  "name": "Walmart Supercenter",
+  "ok": true
+ },
+ "abq_family_dollar": {
+  "lat": 35.0750331,
+  "lng": -106.5653587,
+  "name": "Family Dollar",
+  "ok": true
+ },
+ "abq_dollar_general": {
+  "lat": 34.9515454,
+  "lng": -106.694912,
+  "name": "Dollar General",
+  "ok": true
+ },
+ "abq_autozone": {
+  "lat": 35.0727718,
+  "lng": -106.5349134,
+  "name": "AutoZone Auto Parts",
+  "ok": true
+ },
+ "abq_albq_plaza": {
+  "lat": 35.0857079,
+  "lng": -106.650513,
+  "name": "201 3rd St NW, Albuquerque, NM 87102",
+  "ok": true
+ },
+ "abq_simms": {
+  "lat": 35.0833501,
+  "lng": -106.6521805,
+  "name": "The Historic Simms Building",
+  "ok": true
+ },
+ "abq_courthouse": {
+  "lat": 35.0922529,
+  "lng": -106.6495616,
+  "name": "Pete V. Domenici United States Courthouse",
+  "ok": true
+ },
+ "abq_uptown_office": {
+  "lat": 35.1009072,
+  "lng": -106.5706802,
+  "name": "Park Square Market",
+  "ok": true
+ },
+ "abq_apd_southeast": {
+  "lat": 35.065215,
+  "lng": -106.56803,
+  "name": "Albuquerque Police Department - Southeast Substation",
+  "ok": true
+ },
+ "abq_highland_hs": {
+  "lat": 35.074515,
+  "lng": -106.591194,
+  "name": "Highland High School",
+  "ok": true
+ },
+ "abq_unmh": {
+  "lat": 35.0882062,
+  "lng": -106.6189678,
+  "name": "UNM Hospital",
+  "ok": true
+ },
+ "abq_montgomery_wyoming": {
+  "lat": 35.1306248,
+  "lng": -106.5509386,
+  "name": "Wyoming Blvd NE & Montgomery Blvd NE, Albuquerque, NM 87111",
+  "ok": true
+ },
+ "abq_tramway": {
+  "lat": 35.1307432,
+  "lng": -106.4979054,
+  "name": "Tramway Blvd NE & Montgomery Blvd NE, Albuquerque, NM 87111",
+  "ok": true
+ },
+ "abq_big_i": {
+  "lat": 35.104807,
+  "lng": -106.6297223,
+  "name": "The Big I",
+  "ok": true
+ },
+ "abq_diversion": {
+  "lat": 35.1473717,
+  "lng": -106.6052128,
+  "name": "North Diversion Channel",
+  "ok": true
+ },
+ "abq_west_mesa": {
+  "lat": 35.1521967,
+  "lng": -106.7173234,
+  "name": "Monta\u00f1o Rd NW & Unser Blvd NW, Albuquerque, NM 87120",
+  "ok": true
+ },
+ "abq_bosque": {
+  "lat": 35.0938,
+  "lng": -106.6805,
+  "name": "Central Ave bridge over the Rio Grande (manual)",
+  "ok": true
+ },
+ "abq_skyline": {
+  "lat": 35.091671,
+  "lng": -106.6556575,
+  "name": "Downtown, Albuquerque, NM",
+  "ok": true
+ },
+ "ep_segundo_3rd": {
+  "lat": 31.7557305,
+  "lng": -106.4817449,
+  "name": "E 3rd Ave & S Florence St, El Paso, TX 79901",
+  "ok": true
+ },
+ "ep_segundo_virginia": {
+  "lat": 31.7553372,
+  "lng": -106.4794184,
+  "name": "S Virginia St",
+  "ok": true
+ },
+ "ep_manhattan_heights": {
+  "lat": 31.7848435,
+  "lng": -106.4614403,
+  "name": "Elm St & Pershing Dr, El Paso, TX 79903",
+  "ok": true
+ },
+ "ep_northeast": {
+  "lat": 31.877452,
+  "lng": -106.4237782,
+  "name": "Diana Dr/Dyer St",
+  "ok": true
+ },
+ "ep_lower_valley": {
+  "lat": 31.727706,
+  "lng": -106.345895,
+  "name": "8111 North Loop",
+  "ok": true
+ },
+ "ep_eastside_walls": {
+  "lat": 31.7915463,
+  "lng": -106.3231347,
+  "name": "Edgemere Blvd & Lee Trevino Dr, El Paso, TX 79935",
+  "ok": true
+ },
+ "ep_sunset_heights": {
+  "lat": 31.7601106,
+  "lng": -106.4932068,
+  "name": "The Upson",
+  "ok": true
+ },
+ "ep_el_paso_st": {
+  "lat": 31.754291,
+  "lng": -106.487898,
+  "name": "W 3rd Ave & S El Paso St, El Paso, TX 79901",
+  "ok": true
+ },
+ "ep_alameda_copia": {
+  "lat": 31.7733458,
+  "lng": -106.4509341,
+  "name": "Alameda Ave & S Copia St",
+  "ok": true
+ },
+ "ep_alameda_zaragoza": {
+  "lat": 31.6918369,
+  "lng": -106.3278768,
+  "name": "Alameda Ave & N Zaragoza Rd, El Paso, TX 79907",
+  "ok": true
+ },
+ "ep_five_points": {
+  "lat": 31.7837374,
+  "lng": -106.4614282,
+  "name": "Montana Ave & Piedras St, El Paso, TX 79903",
+  "ok": true
+ },
+ "ep_dyer_hondo": {
+  "lat": 31.8698529,
+  "lng": -106.4282663,
+  "name": "Dyer St & Hondo Pass Dr, El Paso, TX 79904",
+  "ok": true
+ },
+ "ep_san_jacinto": {
+  "lat": 31.7596192,
+  "lng": -106.4885225,
+  "name": "San Jacinto Plaza",
+  "ok": true
+ },
+ "ep_plaza_theatre": {
+  "lat": 31.7586656,
+  "lng": -106.4893557,
+  "name": "The Plaza Theatre",
+  "ok": true
+ },
+ "ep_chicos": {
+  "lat": 31.772327,
+  "lng": -106.441391,
+  "name": "Chico's Tacos",
+  "ok": true
+ },
+ "ep_whataburger": {
+  "lat": 31.7734029,
+  "lng": -106.5004915,
+  "name": "Whataburger",
+  "ok": true
+ },
+ "ep_tire_shop": {
+  "lat": 31.7665533,
+  "lng": -106.418121,
+  "name": "Professional Tire Shop",
+  "ok": true
+ },
+ "ep_union_depot": {
+  "lat": 31.7573368,
+  "lng": -106.4960292,
+  "name": "El Paso",
+  "ok": true
+ },
+ "ep_strip_mall": {
+  "lat": 31.7698858,
+  "lng": -106.4236281,
+  "name": "Fox Plaza Shopping Center",
+  "ok": true
+ },
+ "ep_gas_circlek": {
+  "lat": 31.776987,
+  "lng": -106.266738,
+  "name": "Circle K",
+  "ok": true
+ },
+ "ep_gas_7eleven": {
+  "lat": 31.7115183,
+  "lng": -106.3478302,
+  "name": "ATM 7ELEVEN, INC.",
+  "ok": true
+ },
+ "ep_gas_valero": {
+  "lat": 31.8784157,
+  "lng": -106.4219768,
+  "name": "Valero",
+  "ok": true
+ },
+ "ep_gas_chevron": {
+  "lat": 31.755233,
+  "lng": -106.486286,
+  "name": "Chevron",
+  "ok": true
+ },
+ "ep_walmart": {
+  "lat": 31.8291939,
+  "lng": -106.4470201,
+  "name": "Walmart Supercenter",
+  "ok": true
+ },
+ "ep_family_dollar": {
+  "lat": 31.763835,
+  "lng": -106.366123,
+  "name": "Family Dollar",
+  "ok": true
+ },
+ "ep_dollar_general": {
+  "lat": 31.7839397,
+  "lng": -106.4245751,
+  "name": "Dollar General",
+  "ok": true
+ },
+ "ep_albertsons": {
+  "lat": 31.7809771,
+  "lng": -106.5040472,
+  "name": "Albertsons",
+  "ok": true
+ },
+ "ep_walgreens": {
+  "lat": 31.760848,
+  "lng": -106.353852,
+  "name": "Walgreens",
+  "ok": true
+ },
+ "ep_autozone": {
+  "lat": 31.75566,
+  "lng": -106.39633,
+  "name": "O'Reilly Auto Parts",
+  "ok": true
+ },
+ "ep_wells_fargo": {
+  "lat": 31.7601058,
+  "lng": -106.4864399,
+  "name": "Wells Fargo Plaza, 221 N Kansas St, El Paso, TX 79901",
+  "ok": true
+ },
+ "ep_weststar": {
+  "lat": 31.7619103,
+  "lng": -106.4902384,
+  "name": "WestStar Tower",
+  "ok": true
+ },
+ "ep_courthouse": {
+  "lat": 31.7581208,
+  "lng": -106.484083,
+  "name": "El Paso County Court House",
+  "ok": true
+ },
+ "ep_police_central": {
+  "lat": 31.837701,
+  "lng": -106.5728683,
+  "name": "El Paso Police Department-Command",
+  "ok": true
+ },
+ "ep_bowie_hs": {
+  "lat": 31.7667153,
+  "lng": -106.4583673,
+  "name": "Bowie High School",
+  "ok": true
+ },
+ "ep_umc": {
+  "lat": 31.7713927,
+  "lng": -106.434171,
+  "name": "University Medical Center of El Paso",
+  "ok": true
+ },
+ "ep_ysleta_mission": {
+  "lat": 31.6910157,
+  "lng": -106.3273945,
+  "name": "Ysleta Mission",
+  "ok": true
+ },
+ "ep_mesa_executive": {
+  "lat": 31.7953366,
+  "lng": -106.5112029,
+  "name": "N Mesa St & Executive Center Blvd, El Paso, TX 79902",
+  "ok": true
+ },
+ "ep_border_paisano": {
+  "lat": 31.7548108,
+  "lng": -106.4892745,
+  "name": "S Santa Fe St & W Paisano Dr, El Paso, TX 79901",
+  "ok": true
+ },
+ "ep_scenic_drive": {
+  "lat": 31.782629,
+  "lng": -106.479791,
+  "name": "Murchison Rogers Park",
+  "ok": true
+ },
+ "ep_rio_grande": {
+  "lat": 31.7672409,
+  "lng": -106.4543374,
+  "name": "Chamizal National Memorial",
+  "ok": true
+ },
+ "ep_skyline": {
+  "lat": 31.7582848,
+  "lng": -106.4868971,
+  "name": "Downtown El Paso, El Paso, TX",
+  "ok": true
+ },
+ "abq_tire_shop": {
+  "lat": 35.0653781,
+  "lng": -106.5865963,
+  "name": "S&R Tyres LLC",
+  "ok": true
+ },
+ "abq_walgreens": {
+  "lat": 35.080108,
+  "lng": -106.612492,
+  "name": "Walgreens",
+  "ok": true
+ },
+ "ep_chihuahuita": {
+  "lat": 31.7518379,
+  "lng": -106.4862346,
+  "name": "Chihuahuita, El Paso, TX 79901",
+  "ok": true
+ },
+ "ep_spaghetti_bowl": {
+  "lat": 31.7772,
+  "lng": -106.4486,
+  "name": "I-10 / US-54 interchange (manual)",
+  "ok": true
+ },
+ "ep_franklins": {
+  "lat": 31.87,
+  "lng": -106.49,
+  "name": "Franklin Mountains ridge (manual)",
+  "ok": true
+ }
+}
