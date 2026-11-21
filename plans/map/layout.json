@@ -1,0 +1,5065 @@
+{
+ "name": "Alamo County",
+ "units": "studs",
+ "playable": [
+  0,
+  0,
+  3072,
+  3072
+ ],
+ "extents": [
+  -512,
+  -512,
+  3584,
+  3584
+ ],
+ "studio_origin": "world = (x - 1536, 0, z - 1536); main intersection = world origin",
+ "baseplates": "playable 3072 x 3072 = 2.25 baseplates; with scenery 4096 x 4096 = 4 baseplates (2048 each)",
+ "road_classes": {
+  "arterial": {
+   "ctc": 100.0,
+   "sidewalk": 10.0,
+   "lanes": "3+3, 16 median",
+   "row": 120.0
+  },
+  "collector": {
+   "ctc": 48.0,
+   "sidewalk": 8.0,
+   "lanes": "1+1, parking both sides",
+   "row": 64.0
+  },
+  "loop": {
+   "ctc": 56.0,
+   "sidewalk": 0,
+   "lanes": "1+1, 14 shoulders",
+   "row": 56.0
+  },
+  "local": {
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  "alley": {
+   "ctc": 18,
+   "sidewalk": 0,
+   "lanes": "dirt/broken asphalt",
+   "row": 18
+  },
+  "rural": {
+   "ctc": 28.0,
+   "sidewalk": 0,
+   "lanes": "1+1, dirt shoulders",
+   "row": 28.0
+  }
+ },
+ "roads": [
+  {
+   "id": "camino",
+   "name": "Camino Real (old Route 66)",
+   "cls": "arterial",
+   "x1": 0,
+   "z1": 1536,
+   "x2": 3072,
+   "z2": 1536,
+   "ctc": 100.0,
+   "sidewalk": 10.0,
+   "lanes": "3+3, 16 median",
+   "row": 120.0
+  },
+  {
+   "id": "mesa",
+   "name": "Mesa Blvd",
+   "cls": "arterial",
+   "x1": 1536,
+   "z1": 0,
+   "x2": 1536,
+   "z2": 3072,
+   "ctc": 100.0,
+   "sidewalk": 10.0,
+   "lanes": "3+3, 16 median",
+   "row": 120.0
+  },
+  {
+   "id": "c_ash",
+   "name": "Ash St",
+   "cls": "collector",
+   "x1": 768,
+   "z1": 64,
+   "x2": 768,
+   "z2": 3008,
+   "ctc": 48.0,
+   "sidewalk": 8.0,
+   "lanes": "1+1, parking both sides",
+   "row": 64.0
+  },
+  {
+   "id": "c_juniper",
+   "name": "Juniper St",
+   "cls": "collector",
+   "x1": 2304,
+   "z1": 64,
+   "x2": 2304,
+   "z2": 3008,
+   "ctc": 48.0,
+   "sidewalk": 8.0,
+   "lanes": "1+1, parking both sides",
+   "row": 64.0
+  },
+  {
+   "id": "c_2nd",
+   "name": "2nd Ave",
+   "cls": "collector",
+   "x1": 64,
+   "z1": 768,
+   "x2": 3008,
+   "z2": 768,
+   "ctc": 48.0,
+   "sidewalk": 8.0,
+   "lanes": "1+1, parking both sides",
+   "row": 64.0
+  },
+  {
+   "id": "c_6th",
+   "name": "6th Ave",
+   "cls": "collector",
+   "x1": 64,
+   "z1": 2304,
+   "x2": 3008,
+   "z2": 2304,
+   "ctc": 48.0,
+   "sidewalk": 8.0,
+   "lanes": "1+1, parking both sides",
+   "row": 64.0
+  },
+  {
+   "id": "loop_n",
+   "name": "Loop 66",
+   "cls": "loop",
+   "x1": 64,
+   "z1": 64,
+   "x2": 3008,
+   "z2": 64,
+   "ctc": 56.0,
+   "sidewalk": 0,
+   "lanes": "1+1, 14 shoulders",
+   "row": 56.0
+  },
+  {
+   "id": "loop_s",
+   "name": "Loop 66",
+   "cls": "loop",
+   "x1": 64,
+   "z1": 3008,
+   "x2": 3008,
+   "z2": 3008,
+   "ctc": 56.0,
+   "sidewalk": 0,
+   "lanes": "1+1, 14 shoulders",
+   "row": 56.0
+  },
+  {
+   "id": "loop_w",
+   "name": "Loop 66",
+   "cls": "loop",
+   "x1": 64,
+   "z1": 64,
+   "x2": 64,
+   "z2": 3008,
+   "ctc": 56.0,
+   "sidewalk": 0,
+   "lanes": "1+1, 14 shoulders",
+   "row": 56.0
+  },
+  {
+   "id": "loop_e",
+   "name": "Loop 66",
+   "cls": "loop",
+   "x1": 3008,
+   "z1": 64,
+   "x2": 3008,
+   "z2": 3008,
+   "ctc": 56.0,
+   "sidewalk": 0,
+   "lanes": "1+1, 14 shoulders",
+   "row": 56.0
+  },
+  {
+   "id": "ranch",
+   "name": "Ranch Road",
+   "cls": "rural",
+   "x1": 3008,
+   "z1": 340,
+   "x2": 3170,
+   "z2": 340,
+   "ctc": 28.0,
+   "sidewalk": 0,
+   "lanes": "1+1, dirt shoulders",
+   "row": 28.0
+  },
+  {
+   "id": "plaza_st",
+   "name": "Plaza St",
+   "cls": "local",
+   "x1": 1010,
+   "z1": 800.0,
+   "x2": 1010,
+   "z2": 1476.0,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "court_st",
+   "name": "Court St",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 1010,
+   "x2": 1476.0,
+   "z2": 1010,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "dt_ne_l",
+   "name": "Center St",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 1000,
+   "x2": 2272.0,
+   "z2": 1000,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "dt_sw_l",
+   "name": "Route 66 local",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 1940,
+   "x2": 1476.0,
+   "z2": 1940,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "dt_se_l",
+   "name": "Market St",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 1900,
+   "x2": 2272.0,
+   "z2": 1900,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "west_a_l0",
+   "name": "West local 1",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 970.0,
+   "x2": 736.0,
+   "z2": 970.0,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "west_b_l0",
+   "name": "West local 1",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 2049.0,
+   "x2": 736.0,
+   "z2": 2049.0,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "west_c_l0",
+   "name": "West local 1",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 306.66666666666663,
+   "x2": 736.0,
+   "z2": 306.66666666666663,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "west_c_l1",
+   "name": "West local 2",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 521.3333333333333,
+   "x2": 736.0,
+   "z2": 521.3333333333333,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "north_2_l0",
+   "name": "North local 1",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 306.66666666666663,
+   "x2": 1476.0,
+   "z2": 306.66666666666663,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "north_2_l1",
+   "name": "North local 2",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 521.3333333333333,
+   "x2": 1476.0,
+   "z2": 521.3333333333333,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "north_3_l0",
+   "name": "North local 1",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 306.66666666666663,
+   "x2": 2272.0,
+   "z2": 306.66666666666663,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "north_3_l1",
+   "name": "North local 2",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 521.3333333333333,
+   "x2": 2272.0,
+   "z2": 521.3333333333333,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_a_l0",
+   "name": "South local 1",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 2550.6666666666665,
+   "x2": 736.0,
+   "z2": 2550.6666666666665,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_a_l1",
+   "name": "South local 2",
+   "cls": "local",
+   "x1": 92.0,
+   "z1": 2765.3333333333335,
+   "x2": 736.0,
+   "z2": 2765.3333333333335,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_b_l0",
+   "name": "South local 1",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 2550.6666666666665,
+   "x2": 1476.0,
+   "z2": 2550.6666666666665,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_b_l1",
+   "name": "South local 2",
+   "cls": "local",
+   "x1": 800.0,
+   "z1": 2765.3333333333335,
+   "x2": 1476.0,
+   "z2": 2765.3333333333335,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_c_l0",
+   "name": "South local 1",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 2550.6666666666665,
+   "x2": 2272.0,
+   "z2": 2550.6666666666665,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  },
+  {
+   "id": "south_c_l1",
+   "name": "South local 2",
+   "cls": "local",
+   "x1": 1596.0,
+   "z1": 2765.3333333333335,
+   "x2": 2272.0,
+   "z2": 2765.3333333333335,
+   "ctc": 36,
+   "sidewalk": 8.0,
+   "lanes": "2-way, no lines",
+   "row": 52.0
+  }
+ ],
+ "lots": [
+  {
+   "id": "spawn_park",
+   "name": "SPAWN - Plaza Park",
+   "kind": "park",
+   "district": "Downtown",
+   "x": 1036.0,
+   "z": 1036.0,
+   "w": 440.0,
+   "d": 440.0,
+   "features": [
+    "central fountain plaza + spawn pads under shade canopies",
+    "gazebo/bandstand",
+    "map + job board kiosk",
+    "basketball court",
+    "playground",
+    "palm + cottonwood groves, gravel xeriscape beds",
+    "bus stop on Camino Real",
+    "taxi/ride pickup bay on Mesa Blvd",
+    "public restrooms (shell)"
+   ]
+  },
+  {
+   "id": "court",
+   "name": "Court Building",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1036.0,
+   "z": 800.0,
+   "w": 264,
+   "d": 184.0,
+   "bldg": {
+    "x": 1060,
+    "z": 820.0,
+    "w": 190,
+    "d": 120,
+    "h": 46,
+    "stories": 3
+   },
+   "num": 4
+  },
+  {
+   "id": "post",
+   "name": "Post Office",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1300,
+   "z": 800.0,
+   "w": 176.0,
+   "d": 184.0,
+   "bldg": {
+    "x": 1320,
+    "z": 830.0,
+    "w": 110,
+    "d": 90,
+    "h": 18,
+    "stories": 1
+   },
+   "num": 5,
+   "extras": [
+    "mail-truck lot + loading dock at rear"
+   ]
+  },
+  {
+   "id": "city_lot",
+   "name": "Public parking + bus depot",
+   "kind": "parking",
+   "district": "Downtown",
+   "x": 800.0,
+   "z": 1036.0,
+   "w": 184.0,
+   "d": 440.0
+  },
+  {
+   "id": "tower",
+   "name": "Alamo Tower (office landmark)",
+   "kind": "landmark",
+   "district": "Downtown",
+   "x": 800.0,
+   "z": 800.0,
+   "w": 184.0,
+   "d": 184.0,
+   "bldg": {
+    "x": 830.0,
+    "z": 830.0,
+    "w": 120,
+    "d": 120,
+    "h": 160,
+    "stories": 12
+   }
+  },
+  {
+   "id": "police",
+   "name": "Police Station",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1596.0,
+   "z": 1160,
+   "w": 320,
+   "d": 316.0,
+   "bldg": {
+    "x": 1626.0,
+    "z": 1190,
+    "w": 170,
+    "d": 120,
+    "h": 28,
+    "stories": 2
+   },
+   "num": 6,
+   "extras": [
+    "sally port + secure fenced lot behind",
+    "public lot facing Mesa Blvd",
+    "fire lane at entrance"
+   ]
+  },
+  {
+   "id": "gym",
+   "name": "Gym",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1956.0,
+   "z": 1200,
+   "w": 316.0,
+   "d": 276.0,
+   "bldg": {
+    "x": 1996.0,
+    "z": 1230,
+    "w": 150,
+    "d": 170,
+    "h": 24,
+    "stories": 1
+   },
+   "num": 8
+  },
+  {
+   "id": "clinic",
+   "name": "Clinic",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1596.0,
+   "z": 800.0,
+   "w": 300,
+   "d": 174.0,
+   "bldg": {
+    "x": 1626.0,
+    "z": 830.0,
+    "w": 200,
+    "d": 110,
+    "h": 20,
+    "stories": 1
+   }
+  },
+  {
+   "id": "apts_dt",
+   "name": "Apartments",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1926.0,
+   "z": 800.0,
+   "w": 346.0,
+   "d": 174.0,
+   "bldg": {
+    "x": 1956.0,
+    "z": 820.0,
+    "w": 260,
+    "d": 120,
+    "h": 40,
+    "stories": 3
+   }
+  },
+  {
+   "id": "bank",
+   "name": "Bank",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1596.0,
+   "z": 1026.0,
+   "w": 300,
+   "d": 124.0,
+   "bldg": {
+    "x": 1636.0,
+    "z": 1041.0,
+    "w": 140,
+    "d": 90,
+    "h": 22,
+    "stories": 1
+   }
+  },
+  {
+   "id": "fastfood",
+   "name": "Fast Food (drive-thru)",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1300,
+   "z": 1596.0,
+   "w": 176.0,
+   "d": 170,
+   "bldg": {
+    "x": 1340,
+    "z": 1636.0,
+    "w": 70,
+    "d": 60,
+    "h": 16,
+    "stories": 1
+   },
+   "num": 9,
+   "extras": [
+    "drive-thru lane loop",
+    "menu board",
+    "pylon sign"
+   ]
+  },
+  {
+   "id": "strip_mall",
+   "name": "Strip mall",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 810.0,
+   "z": 1596.0,
+   "w": 470.0,
+   "d": 240,
+   "bldg": {
+    "x": 840.0,
+    "z": 1746.0,
+    "w": 400,
+    "d": 80,
+    "h": 20,
+    "stories": 1
+   },
+   "bays": [
+    [
+     "Clothing Shop",
+     110,
+     10
+    ],
+    [
+     "Hair Shop",
+     60,
+     11
+    ],
+    [
+     "Tattoo Shop",
+     60,
+     12
+    ],
+    [
+     "Laundromat (shell)",
+     70,
+     null
+    ],
+    [
+     "Vacant / for lease",
+     100,
+     null
+    ]
+   ],
+   "extras": [
+    "parking in front (11x22 stalls)",
+    "fire lane along storefronts",
+    "tow-away signs at entries"
+   ]
+  },
+  {
+   "id": "motel",
+   "name": "Route 66 Motel",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 810.0,
+   "z": 1966.0,
+   "w": 360,
+   "d": 306.0,
+   "bldg": {
+    "x": 830.0,
+    "z": 1990,
+    "w": 300,
+    "d": 50,
+    "h": 24,
+    "stories": 2
+   }
+  },
+  {
+   "id": "autoshop",
+   "name": "Auto repair",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1200.0,
+   "z": 1966.0,
+   "w": 276.0,
+   "d": 306.0,
+   "bldg": {
+    "x": 1240.0,
+    "z": 2000,
+    "w": 140,
+    "d": 90,
+    "h": 20,
+    "stories": 1
+   }
+  },
+  {
+   "id": "gas",
+   "name": "Gas Station",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1596.0,
+   "z": 1596.0,
+   "w": 220,
+   "d": 200,
+   "bldg": {
+    "x": 1716.0,
+    "z": 1706.0,
+    "w": 80,
+    "d": 60,
+    "h": 18,
+    "stories": 1
+   },
+   "num": 3,
+   "canopy": {
+    "x": 1616.0,
+    "z": 1621.0,
+    "w": 90,
+    "d": 55,
+    "h": 21.5
+   },
+   "extras": [
+    "6 pumps under canopy",
+    "price pylon at corner"
+   ]
+  },
+  {
+   "id": "conv",
+   "name": "Convenience Store",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 1836.0,
+   "z": 1596.0,
+   "w": 170,
+   "d": 170,
+   "bldg": {
+    "x": 1866.0,
+    "z": 1666.0,
+    "w": 90,
+    "d": 70,
+    "h": 17,
+    "stories": 1
+   },
+   "num": 2
+  },
+  {
+   "id": "gun",
+   "name": "Gun Shop",
+   "kind": "interior",
+   "district": "Downtown",
+   "x": 2026.0,
+   "z": 1596.0,
+   "w": 170,
+   "d": 180,
+   "bldg": {
+    "x": 2056.0,
+    "z": 1656.0,
+    "w": 80,
+    "d": 100,
+    "h": 18,
+    "stories": 1
+   },
+   "num": 1,
+   "extras": [
+    "barred windows",
+    "range at rear"
+   ]
+  },
+  {
+   "id": "church",
+   "name": "Church",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1596.0,
+   "z": 1926.0,
+   "w": 260,
+   "d": 346.0,
+   "bldg": {
+    "x": 1656.0,
+    "z": 1980,
+    "w": 120,
+    "d": 160,
+    "h": 34,
+    "stories": 1
+   }
+  },
+  {
+   "id": "laund2",
+   "name": "Tire shop + taqueria",
+   "kind": "shell",
+   "district": "Downtown",
+   "x": 1886.0,
+   "z": 1926.0,
+   "w": 386.0,
+   "d": 346.0,
+   "bldg": {
+    "x": 1916.0,
+    "z": 1990,
+    "w": 220,
+    "d": 80,
+    "h": 18,
+    "stories": 1
+   }
+  },
+  {
+   "id": "warehouse",
+   "name": "Warehouse",
+   "kind": "interior",
+   "district": "Eastside",
+   "x": 2376.0,
+   "z": 1060,
+   "w": 420,
+   "d": 416.0,
+   "bldg": {
+    "x": 2416.0,
+    "z": 1150,
+    "w": 300,
+    "d": 170,
+    "h": 34,
+    "stories": 1
+   },
+   "num": 13,
+   "extras": [
+    "6 loading docks",
+    "truck court + fenced yard"
+   ]
+  },
+  {
+   "id": "tow",
+   "name": "Tow + impound yard",
+   "kind": "yard",
+   "district": "Eastside",
+   "x": 2376.0,
+   "z": 820.0,
+   "w": 380,
+   "d": 240,
+   "bldg": {
+    "x": 2396.0,
+    "z": 840.0,
+    "w": 70,
+    "d": 50,
+    "h": 16,
+    "stories": 1
+   }
+  },
+  {
+   "id": "rail",
+   "name": "Rail spur + grain silos (landmark)",
+   "kind": "landmark",
+   "district": "Eastside",
+   "x": 2860.0,
+   "z": 800.0,
+   "w": 120,
+   "d": 676.0,
+   "bldg": {
+    "x": 2880.0,
+    "z": 920.0,
+    "w": 60,
+    "d": 60,
+    "h": 110,
+    "stories": 1
+   }
+  },
+  {
+   "id": "junk",
+   "name": "Junkyard",
+   "kind": "yard",
+   "district": "Eastside",
+   "x": 2356.0,
+   "z": 1616.0,
+   "w": 360,
+   "d": 300
+  },
+  {
+   "id": "ind2",
+   "name": "Small warehouses (shells)",
+   "kind": "shell",
+   "district": "Eastside",
+   "x": 2736.0,
+   "z": 1616.0,
+   "w": 224.0,
+   "d": 300,
+   "bldg": {
+    "x": 2756.0,
+    "z": 1656.0,
+    "w": 180,
+    "d": 120,
+    "h": 26,
+    "stories": 1
+   }
+  },
+  {
+   "id": "trucks",
+   "name": "Truck stop",
+   "kind": "shell",
+   "district": "Eastside",
+   "x": 2356.0,
+   "z": 1956.0,
+   "w": 604.0,
+   "d": 296.0,
+   "bldg": {
+    "x": 2396.0,
+    "z": 2016.0,
+    "w": 120,
+    "d": 80,
+    "h": 20,
+    "stories": 1
+   }
+  },
+  {
+   "id": "ranch0",
+   "name": "Ranch (big lot, corral)",
+   "kind": "house",
+   "district": "Ranch Road",
+   "x": 2356.0,
+   "z": 112.0,
+   "w": 290,
+   "d": 300,
+   "bldg": {
+    "x": 2446.0,
+    "z": 212.0,
+    "w": 70,
+    "d": 50,
+    "h": 16,
+    "stories": 1
+   },
+   "style": "ranch"
+  },
+  {
+   "id": "ranch1",
+   "name": "Ranch (big lot, corral)",
+   "kind": "house",
+   "district": "Ranch Road",
+   "x": 2666.0,
+   "z": 112.0,
+   "w": 290,
+   "d": 300,
+   "bldg": {
+    "x": 2756.0,
+    "z": 212.0,
+    "w": 70,
+    "d": 50,
+    "h": 16,
+    "stories": 1
+   },
+   "style": "ranch"
+  },
+  {
+   "id": "ranch2",
+   "name": "Ranch (big lot, corral)",
+   "kind": "house",
+   "district": "Ranch Road",
+   "x": 2356.0,
+   "z": 452.0,
+   "w": 290,
+   "d": 300,
+   "bldg": {
+    "x": 2446.0,
+    "z": 552.0,
+    "w": 70,
+    "d": 50,
+    "h": 16,
+    "stories": 1
+   },
+   "style": "ranch"
+  },
+  {
+   "id": "ranch3",
+   "name": "Ranch (big lot, corral)",
+   "kind": "house",
+   "district": "Ranch Road",
+   "x": 2666.0,
+   "z": 452.0,
+   "w": 290,
+   "d": 300,
+   "bldg": {
+    "x": 2756.0,
+    "z": 552.0,
+    "w": 70,
+    "d": 50,
+    "h": 16,
+    "stories": 1
+   },
+   "style": "ranch"
+  },
+  {
+   "id": "prison",
+   "name": "Prison",
+   "kind": "interior",
+   "district": "Ranch Road",
+   "x": 3170,
+   "z": 120,
+   "w": 400,
+   "d": 460,
+   "bldg": {
+    "x": 3230,
+    "z": 200,
+    "w": 260,
+    "d": 200,
+    "h": 30,
+    "stories": 2
+   },
+   "num": 7,
+   "extras": [
+    "double fence + razor wire perimeter",
+    "4 guard towers",
+    "sally port gate on Ranch Road",
+    "yard + basketball court"
+   ]
+  },
+  {
+   "id": "mhp",
+   "name": "Mobile home park",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2356.0,
+   "z": 2356.0,
+   "w": 604.0,
+   "d": 604.0,
+   "style": "mobile"
+  },
+  {
+   "id": "grocery",
+   "name": "Grocery big box",
+   "kind": "shell",
+   "district": "Westside",
+   "x": 112.0,
+   "z": 1160,
+   "w": 604.0,
+   "d": 316.0,
+   "bldg": {
+    "x": 212.0,
+    "z": 1180,
+    "w": 360,
+    "d": 150,
+    "h": 34,
+    "stories": 1
+   }
+  },
+  {
+   "id": "west_a_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 834.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 865.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_a_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 996.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 1027.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "carlot",
+   "name": "Used car lot",
+   "kind": "yard",
+   "district": "Westside",
+   "x": 112.0,
+   "z": 1596.0,
+   "w": 320,
+   "d": 200,
+   "bldg": {
+    "x": 122.0,
+    "z": 1616.0,
+    "w": 50,
+    "d": 40,
+    "h": 14,
+    "stories": 1
+   }
+  },
+  {
+   "id": "gas2",
+   "name": "Gas station (shell, 2nd)",
+   "kind": "shell",
+   "district": "Westside",
+   "x": 452.0,
+   "z": 1596.0,
+   "w": 264.0,
+   "d": 200,
+   "bldg": {
+    "x": 532.0,
+    "z": 1706.0,
+    "w": 70,
+    "d": 50,
+    "h": 17,
+    "stories": 1
+   },
+   "canopy": {
+    "x": 472.0,
+    "z": 1616.0,
+    "w": 80,
+    "d": 50,
+    "h": 21.5
+   }
+  },
+  {
+   "id": "west_b_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 1913.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 1944.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_b_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 2075.0,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 2106.9,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "stucco"
+  },
+  {
+   "id": "west_c_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h18",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 96.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 108.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h19",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 160.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 172.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h20",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 224.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 236.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h21",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 288.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 300.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h22",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 352.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 364.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h23",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 416.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 428.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h24",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 480.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 492.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h25",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 544.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 556.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "west_c_h26",
+   "name": "House",
+   "kind": "house",
+   "district": "Westside",
+   "x": 608.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 620.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "tract"
+  },
+  {
+   "id": "north_2_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 804.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 816.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 868.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 880.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 932.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 944.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 996.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1008.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1060.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1072.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1124.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1136.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1188.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1200.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1252.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1264.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1316.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1328.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1380.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1392.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 804.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 816.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 868.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 880.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 932.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 944.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 996.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1008.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1060.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1072.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1124.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1136.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1188.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1200.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1252.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1264.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h18",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1316.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1328.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h19",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1380.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1392.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h20",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 804.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 816.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h21",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 868.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 880.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h22",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 932.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 944.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h23",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 996.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1008.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h24",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1060.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1072.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h25",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1124.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1136.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h26",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1188.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1200.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h27",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1252.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1264.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h28",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1316.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1328.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_2_h29",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1380.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1392.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1600.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1664.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1728.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1792.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1856.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1920.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1984.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2048.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2112.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2176.0,
+   "z": 170.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 202.56666666666663,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1600.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1664.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1728.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1792.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1856.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1920.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1984.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2048.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h18",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2112.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h19",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2176.0,
+   "z": 332.66666666666663,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 364.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h20",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1600.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h21",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1664.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h22",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1728.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h23",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1792.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h24",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1856.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h25",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1920.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h26",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 1984.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h27",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2048.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h28",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2112.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "north_3_h29",
+   "name": "House",
+   "kind": "house",
+   "district": "Northside",
+   "x": 2176.0,
+   "z": 547.3333333333333,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 579.2333333333332,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "ranchhouse"
+  },
+  {
+   "id": "south_a_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 96.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 114.24000000000001,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 192.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 210.24,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 288.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 306.24,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 384.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 402.24,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 480.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 498.24,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 576.0,
+   "z": 2374.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 594.24,
+    "z": 2418.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 96.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 114.24000000000001,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 192.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 210.24,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 288.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 306.24,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 384.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 402.24,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 480.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 498.24,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 576.0,
+   "z": 2576.6666666666665,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 594.24,
+    "z": 2620.1666666666665,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 96.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 114.24000000000001,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 192.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 210.24,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 288.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 306.24,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 384.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 402.24,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 480.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 498.24,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_a_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 576.0,
+   "z": 2791.3333333333335,
+   "w": 96,
+   "d": 150,
+   "bldg": {
+    "x": 594.24,
+    "z": 2834.8333333333335,
+    "w": 59.519999999999996,
+    "d": 63.0,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "southvalley"
+  },
+  {
+   "id": "south_b_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 804.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 814.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 860.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 870.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 916.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 926.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 972.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 982.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1028.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1038.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1084.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1094.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1140.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1150.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1196.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1206.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1252.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1262.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1308.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1318.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1364.0,
+   "z": 2414.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1374.64,
+    "z": 2446.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 804.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 814.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 860.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 870.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 916.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 926.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 972.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 982.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1028.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1038.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1084.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1094.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1140.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1150.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h18",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1196.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1206.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h19",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1252.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1262.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h20",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1308.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1318.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h21",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1364.0,
+   "z": 2576.6666666666665,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1374.64,
+    "z": 2608.5666666666666,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h22",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 804.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 814.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h23",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 860.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 870.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h24",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 916.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 926.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h25",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 972.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 982.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h26",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1028.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1038.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h27",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1084.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1094.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h28",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1140.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1150.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h29",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1196.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1206.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h30",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1252.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1262.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h31",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1308.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1318.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_b_h32",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1364.0,
+   "z": 2791.3333333333335,
+   "w": 56,
+   "d": 110,
+   "bldg": {
+    "x": 1374.64,
+    "z": 2823.2333333333336,
+    "w": 34.72,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "brick"
+  },
+  {
+   "id": "south_c_h0",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1600.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h1",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1664.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h2",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1728.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h3",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1792.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h4",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1856.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h5",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1920.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h6",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1984.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h7",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2048.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h8",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2112.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h9",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2176.0,
+   "z": 2414.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 2446.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h10",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1600.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h11",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1664.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h12",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1728.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h13",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1792.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h14",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1856.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h15",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1920.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h16",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1984.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h17",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2048.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h18",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2112.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h19",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2176.0,
+   "z": 2576.6666666666665,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 2608.5666666666666,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h20",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1600.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1612.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h21",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1664.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1676.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h22",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1728.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1740.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h23",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1792.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1804.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h24",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1856.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1868.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h25",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1920.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1932.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h26",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 1984.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 1996.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h27",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2048.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2060.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h28",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2112.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2124.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  },
+  {
+   "id": "south_c_h29",
+   "name": "House",
+   "kind": "house",
+   "district": "Southside",
+   "x": 2176.0,
+   "z": 2791.3333333333335,
+   "w": 64,
+   "d": 110,
+   "bldg": {
+    "x": 2188.16,
+    "z": 2823.2333333333336,
+    "w": 39.68,
+    "d": 46.199999999999996,
+    "h": 13,
+    "stories": 1
+   },
+   "style": "fourplex"
+  }
+ ],
+ "scenery": [
+  {
+   "id": "mountains",
+   "name": "Sierra Alamo (mountain backdrop)",
+   "kind": "mountain",
+   "x": 3250,
+   "z": 650,
+   "w": 334,
+   "d": 2934
+  },
+  {
+   "id": "mountains_n",
+   "name": "Foothills",
+   "kind": "mountain",
+   "x": 3590,
+   "z": -512,
+   "w": -6,
+   "d": 1162
+  },
+  {
+   "id": "river",
+   "name": "Rio Alamo + bosque",
+   "kind": "river",
+   "x": -512,
+   "z": -512,
+   "w": 452,
+   "d": 4096
+  },
+  {
+   "id": "interstate",
+   "name": "I-66 (elevated, scenery)",
+   "kind": "freeway",
+   "x": -512,
+   "z": -300,
+   "w": 4096,
+   "d": 60
+  },
+  {
+   "id": "desert_s",
+   "name": "Desert + rail line",
+   "kind": "desert",
+   "x": 0,
+   "z": 3112,
+   "w": 3072,
+   "d": 472
+  },
+  {
+   "id": "arroyo",
+   "name": "Arroyo Seco (concrete channel)",
+   "kind": "arroyo",
+   "x": 0,
+   "z": 3212,
+   "w": 3272,
+   "d": 40
+  }
+ ]
+}
