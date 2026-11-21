@@ -15,7 +15,7 @@ by Claude through the MCP for Blender add-on), exported as FBX and assembled in 
 | [`studio/ScaleAudit.lua`](studio/ScaleAudit.lua) | Command-bar audit: select a building Model, get pass/fix lines |
 | [`research/city-reference/`](research/city-reference/) | ABQ + El Paso field research: `REPORT.html` + Street View / satellite / 3D reference photos, and the capture pipeline |
 | [`research/forum/`](research/forum/) | Sourced DevForum/Creator-Docs research: Blender→Roblox pipeline, R6 scale, large-map performance |
-| [`plans/map/MAP_PLAN.md`](plans/map/MAP_PLAN.md) | **Alamo County map sketch v1** + 7-phase construction plan (terrain → roads → utilities → markings → shells → interiors → details); layout data `plans/map/layout.json` from `tools/map_layout.py` + `tools/render_map.py` |
+| [`plans/map/MAP_PLAN.md`](plans/map/MAP_PLAN.md) | **Alamo County map sketch v2** (realistic street network) + 7-phase construction plan (terrain → roads → utilities → markings → shells → interiors → details); layout data `plans/map/layout.json` from `tools/map_layout.py` + `tools/render_map.py` |
 | [`.claude/agents/`](.claude/agents/) | Claude Code agents: map-architect, blender-builder, standards-auditor, texture-artist, roblox-importer, reference-researcher |
 | [`.claude/skills/`](.claude/skills/) | Skills: sizing standards, Blender→Roblox pipeline, map performance, Southwest style |
 | [`.claude/workflows/build-building.js`](.claude/workflows/build-building.js) | Workflow: plan → model → audit/fix → texture → export → import → audit |
