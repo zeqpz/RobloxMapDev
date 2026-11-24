@@ -279,3 +279,22 @@ if __name__ == "__main__":
     motel()
     misc_signs()
     decals()
+
+
+def door_stickers():
+    img = Image.new("RGBA", (256, 80), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.text((128, 40), "PUSH", fill=(240, 240, 240, 255), font=font(56, "bold"), anchor="mm")
+    save(img, "door_push")
+    img = Image.new("RGBA", (256, 320), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.text((128, 30), "HOURS", fill=(245, 245, 245, 255), font=font(40, "black"), anchor="mm")
+    for i, (a, b) in enumerate((("MON-FRI", "9-7"), ("SAT", "10-6"), ("SUN", "CLOSED"))):
+        d.text((20, 90 + i * 60), a, fill=(235, 235, 235, 255), font=font(30, "bold"), anchor="lm")
+        d.text((236, 90 + i * 60), b, fill=(235, 235, 235, 255), font=font(30, "bold"), anchor="rm")
+    d.text((128, 290), "NO LOITERING", fill=(230, 80, 70, 255), font=font(26, "bold"), anchor="mm")
+    save(img, "door_hours")
+
+
+if __name__ == "__main__":
+    door_stickers()

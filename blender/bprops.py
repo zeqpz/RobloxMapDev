@@ -70,11 +70,18 @@ def stairs(k, mat, x, y, dirx, diry, width, z0, z1, side=1, rise=0.65, run=1.1, 
         ys = sorted((cy - diry * run / 2 - py * hw, cy + diry * run / 2 + py * hw))
         k.box(mat, xs[0], xs[1], ys[0], ys[1], zt - 0.25, zt)
     L = n * run
-    for s in (-1, 1):                                    # stringers
+    for s in (-1, 1):                                    # stringers + handrail on both sides
         ox, oy = px * s * (width / 2 + 0.15), py * s * (width / 2 + 0.15)
         a = (x + ox, y + oy, z0 - 0.6)
-        b = (x + ox + dirx * L, y + oy + diry * L, z1 - 0.6)
+        b = (x + ox + dirx * L, y + oy + diry * L, z1 - 1.15)
         k.tube(stringer, a, b, 0.25, segs=4)
+        hx, hy = px * s * (width / 2 + 0.15), py * s * (width / 2 + 0.15)
+        for i in range(0, n + 1, 3):
+            t = i * run
+            zz = z0 + i * rr
+            bx, by = x + hx + dirx * t, y + hy + diry * t
+            k.box(stringer, bx - 0.09, bx + 0.09, by - 0.09, by + 0.09, zz - 0.35, zz + 3.3)
+        k.tube(stringer, (x + hx, y + hy, z0 + 3.3), (x + hx + dirx * L, y + hy + diry * L, z1 + 3.3), 0.13, segs=6)
     return x + dirx * L, y + diry * L
 
 
@@ -108,7 +115,8 @@ def swamp_cooler(k, x, y, z, face="y-", s=1.0):
         k.box("Metal_8C887B", x - w / 2 + 0.3, x + w / 2 - 0.3, y - d / 2 - 0.12, y - d / 2, zz, zz + 0.18)
         k.box("Metal_8C887B", x - w / 2 - 0.12, x - w / 2, y - d / 2 + 0.3, y + d / 2 - 0.3, zz, zz + 0.18)
     k.box("Metal_9EA2A3", x + w / 2, x + w / 2 + 2.2, y - 1.0, y + 1.0, z + 1.5, z + 3.5)   # duct
-    k.box("Metal_9EA2A3", x + w / 2 + 1.0, x + w / 2 + 2.2, y - 1.0, y + 1.0, z - 0.4, z + 1.5)
+    k.box("Metal_9EA2A3", x + w / 2 + 1.0, x + w / 2 + 2.2, y - 1.0, y + 1.0, z, z + 1.5)
+    k.box("Metal_8C887B", x + w / 2 + 0.8, x + w / 2 + 2.4, y - 1.2, y + 1.2, z, z + 0.3)        # roof jack
 
 
 def ptac(k, axis, face, out, a, z):
@@ -142,9 +150,9 @@ def meter_bank(k, axis, face, out, a, z, n=3):
             g0, g1 = sorted((face + out * 0.25, face + out * 0.55))
             k.box("Glass_C9D4D6", g0, g1, aa - 0.3, aa + 0.3, z + 0.75, z + 1.35)
     if axis == "x":
-        k.box("Metal_9EA2A3", a - 0.15, a + 0.15, f0, f1 + out * 0.05, z + 1.6, z + 12)
+        k.box("Metal_9EA2A3", a - 0.15, a + 0.15, f0, f1 + out * 0.05, z + 1.6, z + 8)
     else:
-        k.box("Metal_9EA2A3", f0, f1 + out * 0.05, a - 0.15, a + 0.15, z + 1.6, z + 12)
+        k.box("Metal_9EA2A3", f0, f1 + out * 0.05, a - 0.15, a + 0.15, z + 1.6, z + 8)
 
 
 def wall_pack(k, axis, face, out, a, z):
@@ -177,7 +185,7 @@ def dumpster(k, x, y, z, yaw=0.0, color="Metal_2F5B3A"):
     k.obox(color, x + c * 3.65, y + s * 3.65, z + 2.5, 0.3, 3.6, 0.4, yaw)                     # pocket
 
 
-def utility_pole(k, x, y, z, h=34.0, arm_yaw=0.0, transformer=False):
+def utility_pole(k, x, y, z, h=34.0, arm_yaw=0.0, transformer=False, rack_dir=(0, 1)):
     """Wood distribution pole: crossarm, braces, pin insulators; optional can transformer."""
     k.cyl("Wood_6B5038", x, y, z - 2, 0.55, h + 2, segs=8, r2=0.42)
     c, s = math.cos(arm_yaw), math.sin(arm_yaw)
@@ -189,7 +197,13 @@ def utility_pole(k, x, y, z, h=34.0, arm_yaw=0.0, transformer=False):
     for d in (-3.6, -1.2, 1.2, 3.6):
         px, py = x + c * d, y + s * d
         k.cyl("Glass_6E8A6A", px, py, top + 0.45, 0.22, 0.6, segs=6, r2=0.14)
-        pins.append((px, py, top + 1.0))
+        pins.append((px, py, top + 1.11))
+    # secondary rack (spool insulators) on the pole face toward rack_dir, for service drops to buildings
+    rx, ry = rack_dir
+    for dz in (0.0, 0.8):
+        k.box("Metal_6E6A62", x + rx * 0.42 - 0.12, x + rx * 0.42 + 0.12, y + ry * 0.42 - 0.12, y + ry * 0.42 + 0.12, top - 4.6 + dz, top - 4.4 + dz)
+        k.cyl("Glass_D8D2C4", x + rx * 0.62, y + ry * 0.62, top - 4.75 + dz, 0.16, 0.5, segs=6)
+    pins.append((x + rx * 0.95, y + ry * 0.95, top - 3.75))
     if transformer:
         k.cyl("Metal_7E8584", x + s * 1.3, y - c * 1.3, z + h - 9, 1.15, 3.6, segs=10)
         k.cyl("Metal_6B7271", x + s * 1.3, y - c * 1.3, z + h - 5.4, 1.2, 0.3, segs=10)
@@ -327,3 +341,18 @@ def flag(k, x, y, z, color="Fabric_C0392B", h=12.0):
     pts = [(x, y, z + h - 0.3), (x + 1.8, y, z + h - 1.2), (x + 1.6, y, z + 3.0), (x, y, z + 2.5)]
     k.face(color, pts)
     k.face(color, pts[::-1])
+
+
+# ====================================================================== every helper above is one QA part
+def _as_part(fn):
+    def wrapped(k, *a, **kw):
+        with k.part(fn.__name__):
+            return fn(k, *a, **kw)
+    wrapped.__name__ = fn.__name__
+    wrapped.__doc__ = fn.__doc__
+    return wrapped
+
+
+for _n, _f in list(globals().items()):
+    if callable(_f) and not _n.startswith("_") and getattr(_f, "__module__", None) == __name__:
+        globals()[_n] = _as_part(_f)

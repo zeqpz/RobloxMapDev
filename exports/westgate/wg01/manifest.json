@@ -1,0 +1,119 @@
+{
+ "block": "WG01",
+ "buildings": {
+  "Site": {
+   "objects": 72,
+   "pieces": {
+    "Paving": 1,
+    "Alley": 2,
+    "Slabs": 1,
+    "Pool": 6,
+    "Aprons": 1,
+    "BlockWall": 2,
+    "Landscape": 7,
+    "Striping": 9,
+    "Wear": 3,
+    "Utility": 11,
+    "Lighting": 4,
+    "Clutter": 17,
+    "Signs": 8
+   },
+   "instances": 0
+  },
+  "Plaza": {
+   "objects": 91,
+   "pieces": {
+    "Front": 2,
+    "Rear": 23,
+    "SideW": 1,
+    "SideE": 1,
+    "Roof": 12,
+    "Interior": 4,
+    "Bay1": 2,
+    "Bay2": 2,
+    "Bay3": 2,
+    "Bay4": 2,
+    "Bay5": 2,
+    "Bay6": 2,
+    "Bay7": 2,
+    "Mansard": 7,
+    "Signs": 9,
+    "Storefronts": 15,
+    "Walk": 3
+   },
+   "instances": 22
+  },
+  "TopDog": {
+   "objects": 26,
+   "pieces": {
+    "Shell": 14,
+    "Roof": 8,
+    "Patio": 4
+   },
+   "instances": 4
+  },
+  "ElSol": {
+   "objects": 36,
+   "pieces": {
+    "Shell": 8,
+    "Roof": 8,
+    "Interior": 3,
+    "Porch": 14,
+    "PoleSign": 3
+   },
+   "instances": 10
+  },
+  "Motel": {
+   "objects": 124,
+   "pieces": {
+    "WingA_Court": 32,
+    "WingA_Back": 7,
+    "WingA_End": 1,
+    "WingB_Court": 31,
+    "WingB_Back": 9,
+    "WingB_End": 1,
+    "Roof": 9,
+    "Walkways": 4,
+    "Stairs": 2,
+    "Bands": 2,
+    "Office": 8,
+    "PorteCochere": 3,
+    "Amenities": 7,
+    "Pool": 4,
+    "PoleSign": 4
+   },
+   "instances": 145
+  }
+ },
+ "protos": {
+  "storefront_door": 332,
+  "door_service": 300,
+  "win_restroom": 84,
+  "win_slider_12": 360,
+  "win_serve": 192,
+  "door_steel_red": 216,
+  "door_steel_grey": 288,
+  "win_slider_4": 348,
+  "win_elsol_12": 192,
+  "win_elsol_11": 192,
+  "door_elsol_pair": 564,
+  "win_elsol_10": 192,
+  "win_elsol_8": 192,
+  "door_back_steel": 600,
+  "win_bath_3": 84,
+  "door_motel_E0B23A": 224,
+  "door_motel_C96F5A": 224,
+  "door_motel_2F8F8B": 224,
+  "win_motel_0": 384,
+  "win_motel_1": 312,
+  "win_motel_2": 384,
+  "win_motel_3": 312,
+  "win_boarded": 144,
+  "win_bath": 84,
+  "win_office_front": 192,
+  "win_office_west": 192,
+  "win_slider_10": 348,
+  "door_office": 300
+ },
+ "placements": 181
+}

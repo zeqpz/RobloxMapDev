@@ -26,8 +26,31 @@ Renders: `renders/westgate/wg01/<passes>_<shot>.png`. Exports: `exports/westgate
 (+ `.fbm` texture folders). Object names `WG01_<Building>_<Pass>__<RobloxMaterial>_<HEX>`; `Sign_` / `Decal_`
 objects carry an image from `textures/buildings/`.
 
-## Install notes (WG01)
-- Terrain inside the block ranges Y -0.3..3.8: flatten to Y 2 under the lot before importing (lot top is Y 2.8).
-- The drained pool basin goes down to Y -3: carve terrain (air) in X 1172..1214, Z -598..-562.
-- 3D Importer: Scale Unit Stud, Insert Using Scene Position ON (meshes are at world coordinates).
-- Driveway aprons sit in the street gutters at the curb cuts (arterial, east street, south street).
+## Quality check (every build)
+`WG_QA = True` runs `blender/bqa.py` on the oriented box of every solid primitive:
+- **clash**: two different parts interpenetrating more than 0.04 studs (SAT depth); lots/slabs are "ground" and exempt
+- **floating**: a part touching nothing (no other part, no ground) within 0.06 studs
+- **loose**: a sign face or decal with nothing solid right behind it
+Report: `plans/westgate/qa_wg01.txt`. WG01 status 2026-11-24: **0 clashes, 0 floating, 0 loose** (from ~140 problems
+on the first run: plants through signs, roofs through walls, porch rafters through the tile roof, coolers through roofs,
+sconces in window trim, conduit across bands, stair stringers in landings, mansard sunk into the front wall, ...).
+
+## Doors + windows
+Prototypes in `blender/bparts.py` (built once, placed many times):
+- doors: frame + stops + threshold + optional casing; leaf 4.6 x 7.4 x 0.5 (flush steel / glass lite / panel / pair);
+  lever + rose, deadbolt, peephole, kick plate, exposed hinges + closer on out-swing service doors
+- storefront pair: wide stiles, mid rail, pull handles, lock cylinder, transom, PUSH + hours stickers
+- windows: slider (2 sashes, meeting stiles, latch, pull, screen), fixed / casement (muntin grid), awning (obscure glass,
+  hinged sash); recessed glass, sloped sill + drip, optional surround, interior blinds or curtains
+
+## Chopped export
+`exec(bexport.py)` with `BX_BLOCK = "WG01"` -> `exports/westgate/wg01/`:
+`WG01_<Building>.fbx` (one object per piece x material), `WG01_Protos.fbx` (28 prototypes at the origin),
+`WG01_Placements.lua` (181 door/window placements in Roblox coordinates), `manifest.json`.
+
+## Install (WG01)
+1. Run `studio/westgate/PrepTerrain_WG01.lua` (flattens terrain under the lot to Y 2 and carves the pool; one undo step).
+2. 3D Importer (Scale Unit Stud, Insert Using Scene Position ON): the 5 building FBX + `WG01_Protos.fbx`.
+3. Put `WG01_Placements.lua` into a ModuleScript `ServerStorage.WG01_Placements`.
+4. Run `studio/westgate/InstallBlock.lua`: one Model per piece under `Workspace.Map.Westgate.WG01.<Building>`,
+   materials/colours from names, collision rules, door/window clones. Signs/decals keep their imported textures.
