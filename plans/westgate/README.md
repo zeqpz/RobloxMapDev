@@ -23,7 +23,7 @@ The blocks east of x 1740 run past the survey edge and are not in blocks.json ye
 
 Run in Blender: `WG_PASSES = "MTC"; WG_RENDER = ["overview", ...]; exec(open(r"...\blender\blocks\wg01.py").read())`.
 Renders: `renders/westgate/wg01/<passes>_<shot>.png`. Exports: `exports/westgate/wg01/WG01_<Building>.fbx`
-(+ `.fbm` texture folders). Object names `WG01_<Building>_<Pass>__<RobloxMaterial>_<HEX>`; `Sign_` / `Decal_`
+(+ `.fbm` texture folders). Object names `WG01_<Building>.<Piece>__<RobloxMaterial>_<HEX>`; `Sign_` / `Decal_`
 objects carry an image from `textures/buildings/`.
 
 ## Quality check (every build)
